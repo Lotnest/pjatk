@@ -1,0 +1,6 @@
+.button {
+    -fx-padding: 12 15 15 15;
+    -fx-background-color: #42E37A;
+    -fx-font-weight: bold;
+    -fx-font-size: 22;
+}
