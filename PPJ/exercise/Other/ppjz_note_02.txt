@@ -1,0 +1,82 @@
+public class Cw2 {
+
+	public static void main(String[] args){
+			
+
+		System.out.println("Hello " + 2021 + "!");	
+		System.out.println("Znaki " + 'P' + 'P' + 'J' + ''!');	
+			
+			// literały: 1, 10, -1, ...
+			// "Hello"
+			// 'a', 'A', '1', '!', '\n' 
+			// true, false
+		
+		// typy liczbowe
+		// calkowie
+		// byte: -128...127
+		// short:
+		// int:
+		// long:
+		
+		// zmienno-przecinkowe
+		// float 
+		// double 
+
+		// logiczne
+		// boolean: true, false
+		
+		// znakowe
+		// char (UNICODE)
+		
+		int a = 9, b = 1;
+		long y = 3;
+		a = a + 1;
+		byte x = 10;
+	
+		double wynik = 4.5;
+		
+		System.out.println(-4.5F);
+		
+		System.out.println(x);
+		System.out.println("x");
+		System.out.println('x');
+		
+		char z = 'a';
+		
+		int t = 0b101;	// 5
+		int a = 023;  	// 19
+		int b = 0xA7; 	// 167
+		float y = 4.5f;	// 
+		
+		x = 11;
+		x = x + 1;
+		
+		int a1 = 5, b1 = 6;	//0...0101 & 0...0110 ->  0...0100
+		
+		System.out.println(a1 & b1); 
+		System.out.println(a1 | b1);
+		System.out.println(a1 << 2); //0...010100
+		System.out.println(a1 >> 1); // 10
+		
+		System.out.println('x');		// x
+		System.out.println((int)'x');
+		System.out.println((char)65);	// A
+		System.out.println(x);			// 12
+		System.out.print("Hello World 2!");
+		System.out.print("Hello" + "World" + "\n");
+	
+		// 456 = 4 * 10^2 + 5 * 10^1 + 6
+		// byte 11010101 = -1*2^7 + 1 * 2^6 + ..... + 1
+		// int 11010101110101011101010111010101 = -1*2^31 + 1*2^30 + .... + 1 
+		// ósemkowy: 23 = 2*8^1 + 3 *8^0 = 19
+		// szesnastkowy: A7 = A*16^1 + 7 = 167 
+		
+		
+		// 128 = 2^7
+		//2:  10000000
+		//8:  200
+		//16: 80
+	}
+
+
+}

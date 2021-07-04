@@ -1,0 +1,48 @@
+class Ppjz04 {
+	
+	public static void main(String[] args) {
+		
+		zadanie01();
+		zadanie02();
+		zadanie03();
+	
+	}
+	
+	static void zadanie01() {
+		
+		int wrt = 1327;
+	
+		System.out.println("System dziesiętny: " + wrt);
+		System.out.println("System binarny (2): " + 0b10100101111);
+		System.out.println("System oktalny (8): " + 02457);
+		System.out.println("System heksadecymalny (16): " + 0x52F);
+	}
+	
+	static void zadanie02() {
+		
+		int pierwsza = 12,	  // 0b1100 
+			druga1 = 0b1000, 
+			druga2 = 0b1011,
+			wynik = 8; 		  // 0b1000
+		
+		System.out.println((pierwsza & druga1) == wynik);
+		System.out.println((pierwsza & druga2) == wynik);
+	}
+	
+	static void zadanie03() {
+		
+		byte b = 0xD;
+		
+		System.out.println((b & 1) == 0?"Liczba " + b + " jest 			
+			parzysta.":"Liczba " + b + " jest nieparzysta.");
+		
+			
+		if ((b & 0b10101010) == 0b10101010)		
+			System.out.println(b + ": bity na nieparzystych pozycjach są 1.");
+		else
+			System.out.println(b + ": nie wszystkie bity na nieparzystych pozycjach są 1.");
+			
+		System.out.println((s & (s%19)) == 0?" ... jest liczbą parzystą.":"... nie jest liczbą parzystą.");
+	}
+
+}

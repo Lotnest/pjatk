@@ -1,0 +1,136 @@
+
+
+Zadania: I, VI, VIII, IX, XI, XII
+
+
+-----------------------------------------------------
+
+Operator wyboru:
+
+(warunek logiczny)?wyrażenie1:wyrażenie2
+
+(2 == 1)?"Hello":"Cześć"	-> "Cześć"
+(2 > 1) ?'H':'C'			-> 'H'
+System.out.println((2 != 2)?'A':((1 >= 2)?'B':'C')); 	// 'C'
+
+---------------------------------------------------------------------------
+
+	// 0b0...00101110
+int b = 46; 
+
+	//   ........
+	//   76543210
+	
+
+	// 1 & 1 -> 1
+	// 0 & 0 -> 0
+	// 0 & 1 -> 0
+	// 1 & 0 -> 0
+	
+	// 1 = 0b0000...01 
+	
+	// sprawdzic czy b & 1 = 1
+	// sprawdzic czy b & 0b10000 = 0b10000
+	// sprawdzic czy ((b >> 4) & 1) = 1
+	
+	System.out.println(((b & 1) == 1)?"Jest 1 na zerowej pozycji":"nie ma 1 na zerowej pozycji");
+	System.out.println( (b & 0b100000) == 0b100000) ?"Bit piaty to 1":"Bit piaty to 0");
+	System.out.println( (((b >> 4) & 1) == 1) ?"Bit piaty to 1":"Bit piaty to 0");	
+
+	
+---------------------------------------------------------------------------
+
+
+boolean x = true, y = false, z = x && y;
+
+int t = 10;
+System.out.println(x && y);				// false 
+System.out.println(x || y);				// true
+System.out.println((!x) || (1 < t));			// true
+
+
+
+---------------------------------------------------------------------------
+
+
+
+java.util.Scanner konsola = new java.util.Scanner(System.in);
+int studentId = konsola.nextInt();
+
+System.out.println("Witaj " + studentId + "....");
+
+
+---------------------------------------------------------------------------
+
+
+double a = 10, b = 3;
+
+System.out.println((int)(a/b) + " reszty " + (int)(a%b)); 
+
+----------------------------------------------------------------------------
+
+if (warunek1) {
+	Instrukcja1;
+	Instrukcja2;
+} else if (warunek2) {
+	Instrukcja3;
+	Instrukcja4;
+} else {
+	Instrukcja5;
+	Instrukcja6;
+
+}
+
+
+if (warunnek)
+	instrukcja;
+--------------------------------------------------------------------------
+	
+int a = 1, b = 2, c = 3;
+
+if (a <= b && b <= c)
+	System.out.println("max = " + c);
+else if (a != c) {
+	...
+	...
+} else {
+	...
+}
+
+
+if (a != 10)
+	System.out.println("Cos");
+
+	
+-----------------------------------------------------------------------------------------	
+
+
+switch (wyrazenie) {
+	
+	case stala1: ... ; break;
+	case stala2: ... ; break;
+	
+	default: ....; break;
+} 
+
+
+int x = 11;
+
+switch (x) {
+	case 1: x = x + 1; break;
+	case 9: x = x + 2; break;
+	case 10: System.out.println("Bingo"); break;
+	default: System.out.println("!"); break;
+}
+
+--------------------------------------------------------------------------------------------
+
+
+double d = Math.random();		// [0,1)
+
+
+boolean czyPada = (Math.random() < 0.5?true:false);
+boolean czySwieciSlonce = (Math.random() < 0.5?false:true);
+
+
+
